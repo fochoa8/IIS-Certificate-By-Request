@@ -215,12 +215,13 @@ And finally the default site.
 
 ![image](https://github.com/user-attachments/assets/1de72fcf-bd9e-4ac1-b32a-c92f235cf4f0)
 
-Key takeaways, always use top security for Your production servers.
+## Key takeaways
+
+Always use top security for Your production servers.
 
 Let's Encrypt option I never use it, but depends on each person, the end user is the one who will be subject to said decisions.
 
 I made this tutorial so as to show You how to create a total custom Certificate on IIS made with OpenSSL.
-
 
 ### Fernando Ochoa Olivares.
 ### MIT Fire Hydrant Winner.
