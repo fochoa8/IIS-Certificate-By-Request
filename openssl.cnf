@@ -1,19 +1,19 @@
 FQDN=razerblade
 DNS2=localhost
 ORGNAME=MIT
-NSCOMMENT="IIS Certificate"
+NSCOMMENT="IIS OpenSSL Certificate"
 EXTKEYUSAGE=clientAuth,serverAuth
 [ca]
-default_ca = req
+default_ca=req
 
 [req]
-default_bits = 16384
-default_md = sha384
-distinguished_name = req_distinguished_name
-attributes = req_ext
-x509_extensions = v3_ext
-dirstring_type = nobmp
-prompt = no
+default_bits=16384
+default_md=sha384
+distinguished_name=req_distinguished_name
+attributes=req_ext
+x509_extensions=v3_ext
+dirstring_type=nobmp
+prompt=no
 
 [req_distinguished_name]
 C=US
@@ -31,8 +31,8 @@ prompt=no
 [v3_ext]
 subjectKeyIdentifier=hash
 authorityKeyIdentifier=keyid:always,issuer:always
-basicConstraints=CA:true
-keyUsage=digitalSignature,nonRepudiation,keyEncipherment,dataEncipherment
+keyUsage=critical,digitalSignature,nonRepudiation,keyEncipherment,dataEncipherment
+basicConstraints=critical,CA:TRUE,pathlen:3
 extendedKeyUsage=$EXTKEYUSAGE
 
 [alt_names]
