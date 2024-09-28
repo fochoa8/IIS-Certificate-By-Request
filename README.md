@@ -29,7 +29,7 @@ Specify it two times, same password. It'd better be a good alpha numeric with sp
 ![image](https://github.com/user-attachments/assets/a31de240-aa27-4dce-a24f-df316cce4244)
 
 
-``openssl genrsa -aes256 -3 -rand .\largefile.iso -out .\ca.key 16384``
+``openssl genrsa -aes256 -f4 -rand .\largefile.iso -out .\ca.key 16384``
 
 Got not a single idea why everybody sets this special key to be broken by a rainbow table attack, and specifies without even knowing -des3, instead of -aes256, des3 has been fully cracked and deprecated for example on [https://github.com/pyca/cryptography]
 
@@ -41,13 +41,13 @@ About AES 256 strength.
 
 ![image](https://github.com/user-attachments/assets/8947caf2-2293-46c8-85ba-f0c943cccbcb)
 
-``openssl genrsa -aes256 -3 -rand .\largefile.iso -out .\ca.key 16384``
+``openssl genrsa -aes256 -f4 -rand .\largefile.iso -out .\ca.key 16384``
 
 More about this command, refer to openssl manual.
 
 [https://docs.openssl.org/1.0.2/man1/genrsa/]
 
-I specify -3 for RSA to use exponent 3, instead of 65537, and the key is 16384 bits long. To make it more strange and adjust the algorithm to my needs. Also I specify a file for more random generated private key.
+I specify -f4 which is to base of 65537, and the key is 16384 bits long. To make it more strange and adjust the algorithm to my needs. Also I specify a file for more random generated private key.
 
 ![image](https://github.com/user-attachments/assets/6027701b-0b23-4ccb-b5a5-6852112af8b8)
 
