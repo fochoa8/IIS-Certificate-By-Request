@@ -1,4 +1,6 @@
-# OpenSSL Guide
+# OpenSSL Guide For Internet Information Services (IIS) Certificates
+
+OpenSSL 3.4.0 recommended.
 
 ![image](https://github.com/user-attachments/assets/ec056031-e31e-45e3-b2b9-32b0aca8c18a)
 
@@ -8,9 +10,13 @@
 
 ## Follow this tutorial
 
-Downlad latest version of OpenSSL.
+Download OpenSSL 3.4.0 from my repository of binaries for Windows 64 bits, assembler optimized with C, and FIPS Enabled.
 
-[https://www.firedaemon.com/firedaemon-openssl]
+Follow the guide in the next url.
+
+https://github.com/fochoa8/OpenSSL-Win-x64
+
+Or get the ones You want, and link them in environment variables.
 
 That's the latest version, compiled pretty nicely, supports more aes modes.
 
