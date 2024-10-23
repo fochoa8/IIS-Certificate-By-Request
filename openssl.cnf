@@ -1,8 +1,3 @@
-FQDN=razerblade
-DNS2=localhost
-ORGNAME=MIT
-NSCOMMENT="IIS OpenSSL Certificate"
-EXTKEYUSAGE=clientAuth,serverAuth
 [ca]
 default_ca=req
 
@@ -16,16 +11,15 @@ dirstring_type=nobmp
 prompt=no
 
 [req_distinguished_name]
-C=US
-ST=Massachusetts
-L=Cambridge
-O=$ORGNAME
-OU=SecOps
-CN=$FQDN
+C=Country in two letters: for USA - US, for Mexico - MX, for Brazil - BR, and so on.
+ST=State
+L=City
+O=Organization
+OU=OrganizationUnit
+CN=hostname1
 
 [req_ext]
-nsComment=@NSCOMMENT
-subjectAltName=alt_names
+nsComment='OpenSSL Certificate for my PC'
 prompt=no
 
 [v3_ext]
@@ -33,8 +27,13 @@ subjectKeyIdentifier=hash
 authorityKeyIdentifier=keyid:always,issuer:always
 keyUsage=critical,digitalSignature,nonRepudiation,keyEncipherment,dataEncipherment
 basicConstraints=critical,CA:TRUE,pathlen:3
-extendedKeyUsage=$EXTKEYUSAGE
+extendedKeyUsage=clientAuth,serverAuth
+subjectAltName=@alt_names
 
 [alt_names]
-DNS.1=$FQDN
-DNS.2=$DNS2
+DNS.1=hostname1
+DNS.2=hostname2
+DNS.3=hostname3
+
+In case You have fixed IP.
+Attach at the end of DNS.1=hostname1 append IP.1=192.168.0.1, DNS.2=hostname2 append IP.2=176.16.0.2, DNS.3=hostname3 append 10.0.0.1, all the IP's are internal use Yours.
