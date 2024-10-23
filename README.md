@@ -69,6 +69,12 @@ I specify -f4 which is to base of 65537, there is base -f1 which is to base 3 (d
 
 ![image](https://github.com/user-attachments/assets/bb7a14d9-4414-4ada-8480-17a9fe8a36c2)
 
+This is an alternative to randomize further, but You would have to generate a random file, then shred it, this can be used for partial information shown, so unless You do not plan on shredding the file, then use the command above rather.
+
+``openssl genrsa -aes256 -f4 -rand .\.cargo\bin\cargo.exe -out .\ca.key 16384``
+
+![image](https://github.com/user-attachments/assets/c3947d67-7c76-4fea-83bf-11b77f3c7810)
+
 After that click Windows key or icon, and write IIS
 
 Click on the next icon.
