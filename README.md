@@ -37,7 +37,7 @@ Specify it two times, same password. It'd better be a good alpha numeric with sp
 ![image](https://github.com/user-attachments/assets/a31de240-aa27-4dce-a24f-df316cce4244)
 
 
-``openssl genrsa -aes256 -f4 -rand .\largefile.iso -out .\ca.key 16384``
+``openssl genrsa -aes256 -f4 -out .\ca.key 16384``
 
 Got not a single idea why everybody sets this special key to be broken by a rainbow table attack, and specifies without even knowing -des3, instead of -aes256, des3 has been fully cracked and deprecated for example on [https://github.com/pyca/cryptography]
 
@@ -51,7 +51,7 @@ https://newatlas.com/quantum-computing/chinese-quantum-computer-hack-rsa-aes-mil
 
 ![image](https://github.com/user-attachments/assets/8947caf2-2293-46c8-85ba-f0c943cccbcb)
 
-``openssl genrsa -aes256 -f4 -rand .\largefile.iso -out .\ca.key 16384``
+``openssl genrsa -aes256 -f4 -out .\ca.key 16384``
 
 In case You doubt this, use Camellia of 256 bits, instead.
 
@@ -59,7 +59,13 @@ In case You doubt this, use Camellia of 256 bits, instead.
 
 ![image](https://github.com/user-attachments/assets/a4ce237b-801e-4d6e-a1a4-8112e2608406)
 
-``openssl genrsa -camellia256 -f4 -rand .\file.ext -out .\ca.key 16384``
+``openssl genrsa -camellia256 -f4 -out .\ca.key 16384``
+
+This is an alternative to randomize further on AES 256, but You would have to generate a random file, then shred it, this can be used for partial information shown, so unless You do not plan on shredding the file, then use the command above rather.
+
+``openssl genrsa -aes256 -f4 -rand .\.cargo\bin\cargo.exe -out .\ca.key 16384``
+
+![image](https://github.com/user-attachments/assets/c3947d67-7c76-4fea-83bf-11b77f3c7810)
 
 More about this command, refer to openssl manual.
 
@@ -68,12 +74,6 @@ More about this command, refer to openssl manual.
 I specify -f4 which is to base of 65537, there is base -f1 which is to base 3 (do not use this at all costs), and the key is 16384 bits long. To make it more strange and adjust the algorithm to my needs. Also I specify a file for more random generated private key.
 
 ![image](https://github.com/user-attachments/assets/bb7a14d9-4414-4ada-8480-17a9fe8a36c2)
-
-This is an alternative to randomize further, but You would have to generate a random file, then shred it, this can be used for partial information shown, so unless You do not plan on shredding the file, then use the command above rather.
-
-``openssl genrsa -aes256 -f4 -rand .\.cargo\bin\cargo.exe -out .\ca.key 16384``
-
-![image](https://github.com/user-attachments/assets/c3947d67-7c76-4fea-83bf-11b77f3c7810)
 
 After that click Windows key or icon, and write IIS
 
