@@ -47,6 +47,10 @@ https://newatlas.com/quantum-computing/chinese-quantum-computer-hack-rsa-aes-mil
 
 In case You doubt this, use Camellia of 256 bits, instead.
 
+![image](https://github.com/user-attachments/assets/19179382-42cb-44d8-8b62-88aba98536ee)
+
+![image](https://github.com/user-attachments/assets/a4ce237b-801e-4d6e-a1a4-8112e2608406)
+
 ``openssl genrsa -camellia256 -f4 -rand .\file.ext -out .\ca.key 16384``
 
 More about this command, refer to openssl manual.
