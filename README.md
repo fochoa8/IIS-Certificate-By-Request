@@ -225,6 +225,22 @@ And finally the default site.
 
 ![image](https://github.com/user-attachments/assets/1de72fcf-bd9e-4ac1-b32a-c92f235cf4f0)
 
+As well it does not hurt for further securin the device and port 443, which is the only one I expose.
+
+![image](https://github.com/user-attachments/assets/41f44ef8-eb82-4cb4-8556-5fac054d274e)
+
+And now press Windows key, and write Notepad, right click it and press on Run as Administrator...
+
+![image](https://github.com/user-attachments/assets/d740eb86-6a6a-4176-9f7b-bb8ae1bce899)
+
+And now edit hosts file, stored in: C:\Windows\System32\drivers\etc\
+
+![image](https://github.com/user-attachments/assets/d81ba4b4-3f7b-45ea-8b59-0e7d77f9047a)
+
+Write Your own hostnames as You wish.
+
+![image](https://github.com/user-attachments/assets/e5987fc2-f86a-4e43-98b7-0a5ba6b66459)
+
 ## Key takeaways
 
 Always use top security for Your production servers.
