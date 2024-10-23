@@ -57,7 +57,7 @@ More about this command, refer to openssl manual.
 
 [https://docs.openssl.org/1.0.2/man1/genrsa/]
 
-I specify -f4 which is to base of 65537, and the key is 16384 bits long. To make it more strange and adjust the algorithm to my needs. Also I specify a file for more random generated private key.
+I specify -f4 which is to base of 65537, there is base -f1 which is to base 3, and the key is 16384 bits long. To make it more strange and adjust the algorithm to my needs. Also I specify a file for more random generated private key.
 
 ![image](https://github.com/user-attachments/assets/6027701b-0b23-4ccb-b5a5-6852112af8b8)
 
