@@ -4,7 +4,7 @@
 
 https://www.openssl.org/
 
-## OpenSSL Guide.
+## OpenSSL Guide
 
 ## Internet Information Services (IIS) Certificates
 
