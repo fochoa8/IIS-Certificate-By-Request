@@ -1,7 +1,5 @@
 # OpenSSL Guide
 
-For Internet Information Services (IIS) Certificates.
-
 ![image](https://github.com/user-attachments/assets/ec056031-e31e-45e3-b2b9-32b0aca8c18a)
 
 ## Internet Information Services (IIS) Certificates
