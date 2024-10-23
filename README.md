@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/ec056031-e31e-45e3-b2b9-32b0aca8c18a)
 
-## IIS Certificates
+## Internet Information Services (IIS) Certificates
 
 ![image](https://github.com/user-attachments/assets/ffd857e3-bb65-41ee-9703-f07b2104d257)
 
