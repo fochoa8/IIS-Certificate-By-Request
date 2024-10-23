@@ -37,11 +37,17 @@ Here is an image about TripleDES.
 
 ![image](https://github.com/user-attachments/assets/990a3ad0-bc73-4171-82a3-d5326f57da40)
 
-About AES 256 strength.
+About AES 256 strength. No it has bot been cracked, follow the legitimate source always.
+
+https://newatlas.com/quantum-computing/chinese-quantum-computer-hack-rsa-aes-military-grade-encryption/
 
 ![image](https://github.com/user-attachments/assets/8947caf2-2293-46c8-85ba-f0c943cccbcb)
 
 ``openssl genrsa -aes256 -f4 -rand .\largefile.iso -out .\ca.key 16384``
+
+In case You doubt this, use Camellia of 256 bits, instead.
+
+``openssl genrsa -camellia256 -f4 -rand .\file.ext -out .\ca.key 16384``
 
 More about this command, refer to openssl manual.
 
