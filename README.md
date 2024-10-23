@@ -257,5 +257,4 @@ Let's Encrypt option I never use it, but depends on each person, the end user is
 
 I made this tutorial so as to show You how to create a total custom Certificate on IIS made with OpenSSL.
 
-## Fernando Ochoa Olivares.
-## MIT Fire Hydrant Winner.
+Thanks, Fernando Ochoa Olivares. MIT Researcher, and winner of Fire Hydrant Award.
