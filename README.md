@@ -61,9 +61,23 @@ In case You doubt this, use Camellia of 256 bits, instead.
 
 ``openssl genrsa -camellia256 -f4 -out .\ca.key 16384``
 
-This is an alternative to randomize further on AES 256, but You would have to generate a random file, then shred it, this can be used for partial information shown, so unless You do not plan on shredding the file, then use the command above rather.
+This is an alternative to randomize further on AES 256, but You would have to generate a random file, then shred it.
 
 ``openssl genrsa -aes256 -f4 -rand .\.cargo\bin\cargo.exe -out .\ca.key 16384``
+
+The command above if You do not plan on shredding the file, then do not issue that command, since it can be used for partial recovery.
+
+My command is 16384 bits with RSA algorithm, and the encryption method is AES 256, the hash sum is SHA3 384. TLS_RSA_AES_256_SHA384, in it's version 1.3
+
+By using openssl.cnf in it's default version.
+
+You are safe with 4098 at least, 8192 bits is already the double, and 16384 the triple.
+
+``openssl genrsa -aes256 -f4 -out .\ca.key 4096``
+
+``openssl genrsa -aes256 -f4 -out .\ca.key 8192``
+
+``openssl genrsa -aes256 -f4 -out .\ca.key 16384``
 
 ![image](https://github.com/user-attachments/assets/c3947d67-7c76-4fea-83bf-11b77f3c7810)
 
