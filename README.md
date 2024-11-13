@@ -18,6 +18,8 @@ Follow the guide in the next url.
 
 https://github.com/fochoa8/OpenSSL-Win-x64
 
+My command is 16384 bits with RSA algorithm, and the encryption method is AES 256, the hash sum is SHA3 384. TLS_RSA_AES_256_SHA384 with Exchange of Keys in X25519, in it's version 1.3
+
 Or get the ones You want, and link them in environment variables.
 
 That's the latest version, compiled pretty nicely, supports more aes modes.
@@ -35,7 +37,6 @@ The command being issued, after a while it will ask for a password.
 Specify it two times, same password. It'd better be a good alpha numeric with special symbols password, more than 12 characters, at least. Call me crazy, but better safe than sorry.
 
 ![image](https://github.com/user-attachments/assets/a31de240-aa27-4dce-a24f-df316cce4244)
-
 
 ``openssl genrsa -aes256 -f4 -out .\ca.key 16384``
 
@@ -66,8 +67,6 @@ This is an alternative to randomize further on AES 256, but You would have to ge
 ``openssl genrsa -aes256 -f4 -rand .\.cargo\bin\cargo.exe -out .\ca.key 16384``
 
 The command above if You do not plan on shredding the file, then do not issue that command, since it can be used for partial recovery.
-
-My command is 16384 bits with RSA algorithm, and the encryption method is AES 256, the hash sum is SHA3 384. TLS_RSA_AES_256_SHA384, in it's version 1.3
 
 By using openssl.cnf in it's default version.
 
