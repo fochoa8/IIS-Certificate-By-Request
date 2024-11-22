@@ -18,7 +18,7 @@ Follow the guide in the next url.
 
 https://github.com/fochoa8/OpenSSL-Win-x64
 
-My command is 16384 bits with RSA algorithm, and the encryption method is AES 256, the hash sum is SHA3 384. TLS_RSA_AES_256_SHA384 with Exchange of Keys in X25519, in it's version 1.3
+My command is 16384 bits with RSA algorithm, and the encryption method is AES 256, the hash sum is SHA3 384. TLS_1.3_RSA_AES_256_X25519_SHA384 with Exchange of Keys in X25519, in it's version 1.3
 
 Or get the ones You want, and link them in environment variables.
 
